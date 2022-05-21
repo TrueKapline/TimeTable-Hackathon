@@ -1,0 +1,91 @@
+.page {
+    display: flex;
+    width: 100%;
+
+    &__header {
+        height: 100px;
+        width: 100%;
+
+        &__container {
+        height: 100%;
+        display: flex;
+        margin-left: 3vw;
+        margin-right: 8.5vw;
+        justify-content: space-between;
+        }
+    }
+}
+
+.title__calendar {
+    font-size: 32px;
+    margin: auto 0px;
+}
+
+.slider {
+    margin: auto 0px auto;
+
+    &__form {
+        margin: auto 0px;
+    }
+
+    &__month {
+        vertical-align: middle;
+        font-size: 22px;
+        margin-left: 1vw;
+    }
+
+    &__but {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        margin: auto 0;
+        background-color: #FFFFFF;
+        vertical-align: middle;
+
+        &:hover {
+            background-color: #FDF5ED;
+        }
+
+        &__image {
+            vertical-align: middle;
+        }
+    }
+}
+
+.search {
+    margin: auto 0px;
+    display: flex;
+    width: 30vw;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 15px; 
+    justify-content: space-between;
+
+    &__lupa {
+        margin: auto 1vw;
+        vertical-align: middle;
+    }
+    
+    &__input {
+        width: 80%;
+        height: 100%
+    }
+
+    &__slide {
+        width: 28px;
+        height: 28px;
+        margin: auto 1vw;
+        background-color: #FFFFFF;
+        vertical-align: middle;
+        border-radius: 50%;
+        
+        &:hover {
+            background-color: #F8F2F2;
+        }
+
+        &__image {
+            vertical-align: middle;
+        }
+    }
+}

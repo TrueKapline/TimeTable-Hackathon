@@ -6,7 +6,6 @@
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -72,27 +71,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-  -webkit-animation-timing-function: cubic-bezier(0.58, 0.05, 0.16, 1);
-          animation-timing-function: cubic-bezier(0.58, 0.05, 0.16, 1);
-}
-
-@-webkit-keyframes slidein {
-  from {
-    margin-left: -100%;
-  }
-  to {
-    margin-left: 0%;
-  }
+  justify-content: left;
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-timing-function: cubic-bezier(0.58, 0.05, 0.16, 1);
 }
 
 @keyframes slidein {
@@ -106,14 +89,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__container {
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.15);
   padding-bottom: 48%;
 }
 
 .header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #EADBD7;
   margin-bottom: 65px;
@@ -138,55 +118,34 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu__items {
   margin: 20px 0px 20px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .menu__item {
   background: #FDF5ED;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 20px 20px;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 5px;
 }
 
 .menu__item__active {
   background: #FDF5ED;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 5px;
   display: flex;
   padding-right: 20px;
 }
 
 .item__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 a.info__link {
@@ -209,6 +168,99 @@ a.info__link {
   height: 70px;
 }
 
+.page {
+  display: flex;
+  width: 100%;
+}
+
+.page__header {
+  height: 100px;
+  width: 100%;
+}
+
+.page__header__container {
+  height: 100%;
+  display: flex;
+  margin-left: 3vw;
+  margin-right: 8.5vw;
+  justify-content: space-between;
+}
+
+.title__calendar {
+  font-size: 32px;
+  margin: auto 0px;
+}
+
+.slider {
+  margin: auto 0px auto;
+}
+
+.slider__form {
+  margin: auto 0px;
+}
+
+.slider__month {
+  vertical-align: middle;
+  font-size: 22px;
+  margin-left: 1vw;
+}
+
+.slider__but {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: auto 0;
+  background-color: #FFFFFF;
+  vertical-align: middle;
+}
+
+.slider__but:hover {
+  background-color: #FDF5ED;
+}
+
+.slider__but__image {
+  vertical-align: middle;
+}
+
+.search {
+  margin: auto 0px;
+  display: flex;
+  width: 30vw;
+  height: 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.search__lupa {
+  margin: auto 1vw;
+  vertical-align: middle;
+}
+
+.search__input {
+  width: 80%;
+  height: 100%;
+}
+
+.search__slide {
+  width: 28px;
+  height: 28px;
+  margin: auto 1vw;
+  background-color: #FFFFFF;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.search__slide:hover {
+  background-color: #F8F2F2;
+}
+
+.search__slide__image {
+  vertical-align: middle;
+}
+
 body {
   font-family: 'Comfortaa';
+  display: flex;
 }
