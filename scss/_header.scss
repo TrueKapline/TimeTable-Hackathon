@@ -32,9 +32,9 @@
     &__logo {
         display: flex;
         border-bottom: 1px solid #EADBD7;
-        margin-bottom: 65px;
         @media (max-width: 768px) {
             margin-bottom: 30px;
+            border-bottom: none;
             padding-bottom: 20px;
             margin: 20px 30px 30px 30px;
         }
@@ -78,11 +78,11 @@
 .menu {
 
     &__items {
-        margin: 100px 0px 20px 0px;
+        margin: 60px 0px 20px 0px;
         display: flex;
         flex-direction: column;
         @media (max-width: 768px) {
-            margin: 70px 0px 20px ;
+            margin: 82px 0px 20px ;
             position: fixed;
             top: 0;
             left: 0;
