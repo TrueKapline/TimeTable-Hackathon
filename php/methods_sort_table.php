@@ -17,7 +17,7 @@
   как сортировать расписание по входным данным запроса */
 function sort_schedule($data) {
   $sort_schedule = output_table($data->table);
-  return create_table_3();
+  return json_encode(create_table_3(), JSON_UNESCAPED_UNICODE);
   return json_encode($sort_schedule, JSON_UNESCAPED_UNICODE);
 }
 
@@ -40,5 +40,5 @@ function output_table($table) {
 function create_table_3() {
   $table_1 = output_table(1);
   $table_2 = output_table(2);
-  return $table_1[0];
+  return $table_1[1];
 }
