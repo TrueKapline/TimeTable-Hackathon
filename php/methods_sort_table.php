@@ -1,5 +1,8 @@
 <?php
 
+/* Подключаемые файлы php */
+require "real_time_schedule.php";
+
 /*
   Атрибуты сортировки:
   * table: номер_сортируемой_таблицы
@@ -10,15 +13,13 @@
   * * 1 - таблица расписания семестра
   * * 2 - таблица мероприятий, проектов и переносов
   * * 3 - таблица реального времени(1 таблица корректируется под данные второй таблицы)
-
-  */
+*/
 
 /* Главный метод сортировки, который определяет,
   как сортировать расписание по входным данным запроса */
 function sort_schedule($data) {
   $sort_schedule = output_table($data->table);
-  return json_encode(create_table_3(), JSON_UNESCAPED_UNICODE);
-  return json_encode($sort_schedule, JSON_UNESCAPED_UNICODE);
+  return $sort_schedule;
 }
 
 /* Метод, который принимает на вход номер таблицы и возвращает эту таблицу в виде объекта */
@@ -31,7 +32,7 @@ function output_table($table) {
       return $GLOBALS["queries"];
       break;
     case 3:
-      return "Таблица номер 3 ещё не создана";
+      return create_table_3();
       break;
   }
 }
@@ -40,5 +41,11 @@ function output_table($table) {
 function create_table_3() {
   $table_1 = output_table(1);
   $table_2 = output_table(2);
-  return $table_1[1];
+  $table_3 = [];
+
+  for ($i = 0; $i < count($table_1); $i++) {
+    $table_3[$i] = new real_time_schedule($table_1[$i]->id);
+  }
+
+  return $table_3;
 }
