@@ -2,6 +2,7 @@
 
 /* Подключаемые файлы php */
 require "real_time_schedule.php";
+require "time.php";
 
 /*
   Атрибуты сортировки:
@@ -44,7 +45,21 @@ function create_table_3() {
   $table_3 = [];
 
   for ($i = 0; $i < count($table_1); $i++) {
-    $table_3[$i] = new real_time_schedule($table_1[$i]->id);
+    $table_3[$i] = new real_time_schedule(0,
+                                          $table_1[$i]->type-1,
+                                          $table_1[$i]->id,
+                                          $table_1[$i]->pair,
+                                          $table_1[$i]->day,
+                                          -1,
+                                          fulldate_in_table_1($table_1[$i]->week_beginning,$table_1[$i]->day),
+                                          $table_1[$i]->groups,
+                                          $table_1[$i]->subgroup_number,
+                                          $table_1[$i]->discipline,
+                                          $table_1[$i]->teachers,
+                                          $table_1[$i]->auditoriums,
+                                          false,
+                                          null,
+                                          null);
   }
 
   return $table_3;
