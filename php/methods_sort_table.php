@@ -86,15 +86,34 @@ function create_table_3() {
       adder($table_3, $real_time_schedule);
     }
     /* Для переносов пар */
-    else {
+    elseif(search_id($table_3, $table_2[$i]->affected_schedule_id) != -1 && $table_2[$i]->type === 4) {
+      $s_id = search_id($table_3, $table_2[$i]->affected_schedule_id);
 
-    }
+      $table_3[$s_id]->day = day($table_2[$i]->dt);
+      $table_3[$s_id]->week = week($table_2[$i]->dt);
+      $table_3[$s_id]->date = $table_2[$i]->dt;
+      $table_3[$s_id]->pair = $table_2[$i]->pair;
+      $table_3[$s_id]->groups = $table_2[$i]->groups;
+      $table_3[$s_id]->teachers = $table_2[$i]->teachers;
+      $table_3[$s_id]->auditories = $table_2[$i]->auditoriums;
+      $table_3[$s_id]->related_queries = $table_2[$i]->related_queries;
+      $table_3[$s_id]->comment = $table_2[$i]->description;
+    } 
   }
 
   return $table_3;
 }
 
-/* метод, который добавляет элемент в массив */
+/* Метод, который добавляет элемент в массив */
 function adder(&$table, $elem) {
   $table[count($table)] = $elem;
+}
+
+/* Метод, который ищет пару по заданному id и возвращает её индекс, если не находят, возвращает -1 */
+function search_id($table, $id) {
+  for($i = 0; $i < count($table); $i++) {
+    if($table[$i]->id === $id)
+      return $i;
+  }
+  return -1;
 }
