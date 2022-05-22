@@ -97,6 +97,7 @@ function create_table_3() {
       $table_3[$s_id]->teachers = $table_2[$i]->teachers;
       $table_3[$s_id]->auditories = $table_2[$i]->auditoriums;
       $table_3[$s_id]->related_queries = $table_2[$i]->related_queries;
+      $table_3[$s_id]->transfer = true;
       $table_3[$s_id]->comment = $table_2[$i]->description;
     } 
   }
