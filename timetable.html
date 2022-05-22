@@ -6,48 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dycalendar.css">
 </head>
 <body>
     <header class="header">
         <div class="header__container _container">
-            <div class="header__body">
-                <a href="" class="header__logo">
-                    <img class="logo__img" src="img/logo.svg" alt="Logo">
-                    <span class="logo__title">UpTable</span>
-                </a>
-                <div class="header__burger">
-                    <span></span>
-                </div>
+                    <div class="header__body">
+                        <a href="" class="header__logo">
+                            <img class="logo__img" src="img/logo.svg" alt="Logo">
+                            <span class="logo__title">UpTable</span>
+                        </a>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                    </div>
                 <nav class="header__menu">
-                    <ul class="menu__items">
-                        <li class="menu__item__active">
-                            <div class="item__active _active">
-                                
-                            </div>
-                            <div class="item__info">
-                                <img src="img/navbar/timetable.svg" alt="">
-                                <a href="timetable.html" class="info__link">Расписание</a>
-                            </div>
-                            <div class="info__img">
-                                <img class="img__arrow" src="img/navbar/arrow1.svg" alt="">
-                            </div>
-                        </li>
-                        <li class="menu__item">
-                            <div class="item__info">
-                                <img src="img/navbar/calendar.svg" alt="">
-                                <a href="calendar.html" class="info__link">Календарь</a>
-                            </div>
-                            <div class="info__img">
-                                <img class="img__arrow" src="img/navbar/arrow1.svg" alt="">
-                            </div>
-                        </li>
+                        <ul class="menu__items">
+                            <form action="timetable.html">
+                                <button class="menu__item__active">
+                                <div class="item__active _active">
+                                    
+                                </div>
+                                <div class="item__info">
+                                    <img src="img/navbar/timetable.svg" alt="">
+                                    <a href="timetable.html" class="info__link">Расписание</a>
+                                </div>
+                                <div class="info__img">
+                                    <img class="img__arrow" src="img/navbar/arrow1.svg" alt="">
+                                </div>
+                                </button>
+                            </form>
+                            <form action="calendar.html">
+                                <button class="menu__item">
+                                <div class="item__info">
+                                    <img src="img/navbar/calendar.svg" alt="">
+                                    <a href="calendar.html" class="info__link">Календарь</a>
+                                </div>
+                                <div class="info__img">
+                                    <img class="img__arrow" src="img/navbar/arrow1.svg" alt="">
+                                </div>
+                                </button>
+                            </form>
                     </ul>
                 </nav>
-            </div>
         </div>
     </header>
     <main class="page">
-        
+            <div class="page__header">
+                <div class="page__header__container">
+                    <div class="title__calendar">Расписание</div>
+                    <form class="search">
+                        <img class="search__lupa" src="img/timetable_header/search_lupa.svg" alt="Logo">
+                        <input class="search__input" type="text" placeholder="Поиск">
+                        <button type="button" class="search__slide"><img  class="search__slide__image" src="img/timetable_header/slide.svg" alt="Logo"></button>
+                    </form>
+                </div>
+            </div>
+        <section class="calendar">
+            <div class="calendar__container">
+                <div class="" id="dycalendar"></div>
+            </div>
+        </section>
     </main>
+    <script src="js/header.js"></script>
+    <script src="js/dycalendar.js"></script>
+    <script>
+        dycalendar.draw({
+            target: '#dycalendar',
+            type: 'month',
+            dayformat: 'full',
+            monthformat: 'full',
+            highlighttargetdate: true,
+            prevnextbutton: 'show',
+        })
+    </script>
 </body>
 </html>
