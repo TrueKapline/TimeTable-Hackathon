@@ -17,12 +17,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:700);
 
 @import "_header.scss";
+@import "_calendar.scss";
+
+@import "_calendar.scss";
+
+@import "_headerTimeTable.scss";
 
 $maxWidthContainer: 1400px;
 $md3: 767.98px;
 body {
     font-family: 'Comfortaa';
-}
+    display: flex;
+} 
 body._lock {
     overflow: hidden;
 }
