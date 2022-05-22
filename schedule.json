@@ -67,7 +67,7 @@
     "week_beginning": "2022-04-11",
     "groups": ["Мумрики"],
     "subgroup_number": 1,
-    "discipline": "Уборка территори",
+    "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
     "auditoriums": ["У кустов сирени"]
   },
@@ -79,7 +79,7 @@
     "week_beginning": "2022-04-11",
     "groups": ["Муми-тролли"],
     "subgroup_number": 1,
-    "discipline": "Уборка территори",
+    "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
     "auditoriums": ["Чердак"]
   },
@@ -199,7 +199,7 @@
     "week_beginning": "2022-04-11",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "subgroup_number": null,
-    "discipline": "Уборка территори",
+    "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
     "auditoriums": ["У кустов сирени"]
   },
@@ -331,7 +331,7 @@
     "week_beginning": "2022-04-11",
     "groups": ["Муми-тролли"],
     "subgroup_number": 2,
-    "discipline": "Уборка территори",
+    "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
     "auditoriums": ["У кустов сирени"]
   },
@@ -391,7 +391,7 @@
     "week_beginning": "2022-04-11",
     "groups": ["Снорки"],
     "subgroup_number": 1,
-    "discipline": "Уборка территори",
+    "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
     "auditoriums": ["У кустов сирени"]
   },
@@ -511,7 +511,7 @@
     "week_beginning": "2022-04-11",
     "groups": ["Муми-тролли"],
     "subgroup_number": 2,
-    "discipline": "Уборка территори",
+    "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
     "auditoriums": ["У кустов сирени"]
   },
@@ -523,7 +523,7 @@
     "week_beginning": "2022-04-18",
     "groups": ["Снорки"],
     "subgroup_number": 1,
-    "discipline": "Уборка территори",
+    "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
     "auditoriums": ["У кустов сирени"]
   },
@@ -631,7 +631,7 @@
     "week_beginning": "2022-04-18",
     "groups": ["Муми-тролли"],
     "subgroup_number": 1,
-    "discipline": "Уборка территори",
+    "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
     "auditoriums": ["Чердак"]
   },
@@ -655,7 +655,7 @@
     "week_beginning": "2022-04-18",
     "groups": ["Мумрики"],
     "subgroup_number": 1,
-    "discipline": "Уборка территори",
+    "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
     "auditoriums": ["Чердак"]
   },
