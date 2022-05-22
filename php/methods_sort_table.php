@@ -46,7 +46,7 @@ function create_table_3() {
 
   /* Добавляем данные из 1 таблицы в 3 */
   for ($i = 0; $i < count($table_1); $i++) {
-    $table_3[$i] = new real_time_schedule(0,
+    $real_time_schedule = new real_time_schedule(0,
                                           $table_1[$i]->type-1,
                                           $table_1[$i]->id,
                                           $table_1[$i]->pair,
@@ -61,13 +61,14 @@ function create_table_3() {
                                           false,
                                           null,
                                           null);
+    adder($table_3, $real_time_schedule);
   }
 
   /* Добавляем данные из 2 таблицы в 3 */
   for ($i = 0; $i < count($table_2); $i++) {
     /* Для мероприятий и проектов */
-    if ($table_2[$i]->type < 3)
-      $table_3[$i] = new real_time_schedule($table_2[$i]->type+1,
+    if ($table_2[$i]->type < 3) {
+      $real_time_schedule = new real_time_schedule($table_2[$i]->type+1,
                                             null,
                                             $table_2[$i]->id,
                                             $table_2[$i]->pair,
@@ -82,11 +83,18 @@ function create_table_3() {
                                             false,
                                             null,
                                             null);
+      adder($table_3, $real_time_schedule);
+    }
     /* Для переносов пар */
     else {
-      
+
     }
   }
 
   return $table_3;
+}
+
+/* метод, который добавляет элемент в массив */
+function adder(&$table, $elem) {
+  $table[count($table)] = $elem;
 }
