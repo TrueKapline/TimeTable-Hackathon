@@ -8,6 +8,7 @@ require "alteration_table.php";
 /*
   Атрибуты сортировки:
   * table: номер_сортируемой_таблицы
+  ---Только для 3 таблицы---
   * date: дата_начала
   * day_count: количество_дней
   * pair_number: номер_пары 
@@ -17,6 +18,7 @@ require "alteration_table.php";
   * type: тип_пары
   * type_lessons: тип_занятия
   * subgroup_number: номер_подгруппы
+  ---Только для 3 таблицы---
 
   Возможные значения атрибутов:
   * {номер_сортируемой_таблицы}:
@@ -37,15 +39,24 @@ require "alteration_table.php";
   - Тип сортировки, которую мы хотим применить к запрашиваемым данным
   * * null - сортировка не нужна
   * * "date" - сортировать по дате
-  * * "groups" - сортировать по группам
-  * * "teachers" - сортировать по преподавателям
-  * * "auditories" - сортировать по аудитории
+  * * "groups" - сортировать по группам по названиям (!!! разработаю по надобности, не работает)
+  * * "teachers" - сортировать по преподавателям по именам (!!! разработаю по надобности, не работает)
+  * * "auditories" - сортировать по аудитории по названиям (!!! разработаю по надобности, не работает)
+  * * "events" - сортировать по мероприятиям по названиям (!!! разработаю по надобности, не работает)
+  * * "project" - сортировать по проектам по названиям (!!! разработаю по надобности, не работает)
   * {заданный_атрибут_вывода}:
   - Атрибут, который будет фильтровать данные(Например вывести пары только с заданным учителем или для данной группы)
   * * null - фильтра не будет, выведет всё
   * * "groups" - выведет только пары только для заданной группы
   * * "teachers" - выведет только пары только с заданным учителем
   * * "auditories" - выведет только пары с заданной аудиторией
+  * * "events" - выведет только пары с заданным мероприятием
+  * * "projects" - выведет только пары с заданным проектом
+  * * "title" - выведет только пары с заданным названием
+  * * "lesson" - выведет только пары с заданным занятием
+  * * "lecture" - выведет только пары с заданной лекцией
+  * * "practice" - выведет только пары с заданной практикой
+  * * "laboratory" - выведет только пары с заданной лабораторной
   * {ключ_вывода}:
   - Ключевое слово для заданного фильтра(например если задали "teachers", то ключевое слово может быть "Иван Иванович")
   * * ключевое слово - слово, по которому будет происходить фильтр
@@ -86,7 +97,7 @@ function sort_schedule($data) {
 
 /* Метод, который оставляет в таблице только даты начиная с заданной даты с заданным количеством дней */
 function table_correct_date(&$table, $date, $day_count) {
-  if ($date == null || $day_count == null) return $table;
+  if ($date === null || $day_count === null) return $table;
 
   $date_end = fulldate_date_p_day($date, $day_count);
   $size_table = count($table);
@@ -102,7 +113,7 @@ function table_correct_date(&$table, $date, $day_count) {
 
 /* Метод, который оставляет в таблице дни только с заданным номером пар  */
 function table_correct_pair(&$table, $pair_number) {
-  if ($pair_number == null || $pair_number === 0) return $table;
+  if ($pair_number === null || $pair_number === 0) return $table;
 
   $size_table = count($table);
 
@@ -134,7 +145,7 @@ function table_sort(&$table, $type_sort) {
 
 /* Метод, который оставляет в таблице пары только с заданными ключами */
 function table_correct_keys(&$table, $output, $output_key) {
-  if ($output == null || $output_key == null) return $table;
+  if ($output === null || $output_key === null) return $table;
   
   $size_table = count($table);
   $search = false;
@@ -163,6 +174,48 @@ function table_correct_keys(&$table, $output, $output_key) {
       if($search === false) unset($table[$i]);
       $search = false;
     }
+  } elseif ($output === "events") {
+    for($i = 0; $i < $size_table; $i++) {
+      if($table[$i]->title != $output_key || $table[$i]->type != 1) {
+        unset($table[$i]);
+      }
+    }
+  } elseif ($output === "projects") {
+    for($i = 0; $i < $size_table; $i++) {
+      if($table[$i]->title != $output_key || $table[$i]->type != 2) {
+        unset($table[$i]);
+      }
+    }
+  } elseif ($output === "title") {
+    for($i = 0; $i < $size_table; $i++) {
+      if($table[$i]->title != $output_key) {
+        unset($table[$i]);
+      }
+    }
+  } elseif ($output === "lesson") {
+    for($i = 0; $i < $size_table; $i++) {
+      if($table[$i]->title != $output_key || $table[$i]->type != 0) {
+        unset($table[$i]);
+      }
+    }
+  } elseif ($output === "lecture") {
+    for($i = 0; $i < $size_table; $i++) {
+      if($table[$i]->title != $output_key || $table[$i]->type != 0 || $table[$i]->type_lesson != 0) {
+        unset($table[$i]);
+      }
+    }
+  } elseif ($output === "practice") {
+    for($i = 0; $i < $size_table; $i++) {
+      if($table[$i]->title != $output_key || $table[$i]->type != 0 || $table[$i]->type_lesson != 1) {
+        unset($table[$i]);
+      }
+    }
+  } elseif ($output === "laboratory") {
+    for($i = 0; $i < $size_table; $i++) {
+      if($table[$i]->title != $output_key || $table[$i]->type != 0 || $table[$i]->type_lesson != 2) {
+        unset($table[$i]);
+      }
+    }
   }
 
   $table = array_values($table);
@@ -170,7 +223,7 @@ function table_correct_keys(&$table, $output, $output_key) {
 
 /* Метод, который оставляет в таблице пары только с заданным типом */
 function table_correct_type(&$table, $type) {
-  if ($type == null) return $table;
+  if ($type === null) return $table;
 
   $size_table = count($table);
 
@@ -185,7 +238,7 @@ function table_correct_type(&$table, $type) {
 
 /* Метод, который оставляет в таблице пары только с заданным типом занятия */
 function table_correct_type_lessons(&$table, $type_lessons) {
-  if ($type_lessons == null) return $table;
+  if ($type_lessons === null) return $table;
 
   $size_table = count($table);
 
@@ -200,7 +253,7 @@ function table_correct_type_lessons(&$table, $type_lessons) {
 
 /* Метод, который оставляет в таблице занятия лабораторные только с заданным номером группы*/
 function table_correct_subgroup_number(&$table, $subgroup_number) {
-  if ($subgroup_number == null) return $table;
+  if ($subgroup_number === null) return $table;
 
   $size_table = count($table);
 
