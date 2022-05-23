@@ -28,13 +28,13 @@ function sort_schedule($data) {
 function output_table($table) {
   switch ($table) {
     case 1:
-      return $GLOBALS["schedule"];
+      return json_decode(file_get_contents("../schedule.json"));        // Расписание пар в json;
       break;
     case 2:
-      return $GLOBALS["queries"];
+      return json_decode(file_get_contents("../queries.json"));         // Расписание мероприятий, проектов, переносов в js;
       break;
     case 3:
-      return $GLOBALS["real_time_table"];
+      return json_decode(file_get_contents("../real_time_table.json")); // Раписания реального времени
       break;
   }
 }
