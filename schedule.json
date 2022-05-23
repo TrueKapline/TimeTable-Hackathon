@@ -9,7 +9,7 @@
     "subgroup_number": 1,
     "discipline": "Собирание оригами",
     "teachers": ["Шуссель"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4376057,
@@ -21,7 +21,7 @@
     "subgroup_number": 1,
     "discipline": "Собирание оригами",
     "teachers": ["Шуссель"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4376058,
@@ -33,7 +33,7 @@
     "subgroup_number": 2,
     "discipline": "Собирание оригами",
     "teachers": ["Шуссель"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4386758,
@@ -45,7 +45,7 @@
     "subgroup_number": 1,
     "discipline": "Собирание оригами",
     "teachers": ["Шуссель"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4387462,
@@ -57,7 +57,7 @@
     "subgroup_number": null,
     "discipline": "Плетение фенечек",
     "teachers": null,
-    "auditoriums": ["Зимний сад"]
+    "auditories": ["Зимний сад"]
   },
   {
     "id": 4373494,
@@ -69,7 +69,7 @@
     "subgroup_number": 1,
     "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
-    "auditoriums": ["У кустов сирени"]
+    "auditories": ["У кустов сирени"]
   },
   {
     "id": 4373495,
@@ -81,7 +81,7 @@
     "subgroup_number": 1,
     "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
-    "auditoriums": ["Чердак"]
+    "auditories": ["Чердак"]
   },
   {
     "id": 4376814,
@@ -93,7 +93,7 @@
     "subgroup_number": null,
     "discipline": "Игры на музыкальных инструментах",
     "teachers": ["Морра"],
-    "auditoriums": ["Танцплощадка"]
+    "auditories": ["Танцплощадка"]
   },
   {
     "id": 4369611,
@@ -105,7 +105,7 @@
     "subgroup_number": 1,
     "discipline": "Методы улавливания полезной информации",
     "teachers": ["Юксаре"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4380729,
@@ -117,7 +117,7 @@
     "subgroup_number": null,
     "discipline": "Методы улавливания полезной информации",
     "teachers": ["Юксаре"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4369608,
@@ -129,7 +129,7 @@
     "subgroup_number": 1,
     "discipline": "Методы улавливания полезной информации",
     "teachers": ["Юксаре"],
-    "auditoriums": ["Зимний сад"]
+    "auditories": ["Зимний сад"]
   },
   {
     "id": 4376060,
@@ -141,7 +141,7 @@
     "subgroup_number": null,
     "discipline": "Собирание оригами",
     "teachers": ["Муми-папа"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4376059,
@@ -153,7 +153,7 @@
     "subgroup_number": 1,
     "discipline": "Собирание оригами",
     "teachers": ["Шуссель"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4370623,
@@ -165,7 +165,7 @@
     "subgroup_number": null,
     "discipline": "Обустраивание личного пространства",
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4369609,
@@ -177,7 +177,7 @@
     "subgroup_number": 1,
     "discipline": "Методы улавливания полезной информации",
     "teachers": ["Юксаре"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4370592,
@@ -189,7 +189,7 @@
     "subgroup_number": null,
     "discipline": "Основы собирания табуреток",
     "teachers": ["Ти-ти-у-у"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4373496,
@@ -201,7 +201,7 @@
     "subgroup_number": null,
     "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
-    "auditoriums": ["У кустов сирени"]
+    "auditories": ["У кустов сирени"]
   },
   {
     "id": 4370622,
@@ -213,7 +213,7 @@
     "subgroup_number": null,
     "discipline": "Обустраивание личного пространства",
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4376792,
@@ -225,7 +225,7 @@
     "subgroup_number": null,
     "discipline": "Плетение фенечек",
     "teachers": null,
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4387485,
@@ -237,7 +237,7 @@
     "subgroup_number": null,
     "discipline": "Игры на музыкальных инструментах",
     "teachers": ["Морра"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4381638,
@@ -249,7 +249,7 @@
     "subgroup_number": null,
     "discipline": "Обустраивание личного пространства",
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4381624,
@@ -261,7 +261,7 @@
     "subgroup_number": null,
     "discipline": "Основы собирания табуреток",
     "teachers": ["Ти-ти-у-у"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4381625,
@@ -273,7 +273,7 @@
     "subgroup_number": 1,
     "discipline": "Основы собирания табуреток",
     "teachers": ["Ти-ти-у-у"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4387463,
@@ -285,7 +285,7 @@
     "subgroup_number": null,
     "discipline": "Плетение фенечек",
     "teachers": null,
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4381634,
@@ -297,7 +297,7 @@
     "subgroup_number": 1,
     "discipline": "Обустраивание личного пространства",
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4381632,
@@ -309,7 +309,7 @@
     "subgroup_number": 1,
     "discipline": "Обустраивание личного пространства",
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4370593,
@@ -321,7 +321,7 @@
     "subgroup_number": 1,
     "discipline": "Основы собирания табуреток",
     "teachers": null,
-    "auditoriums": null
+    "auditories": null
   },
   {
     "id": 4373500,
@@ -333,7 +333,7 @@
     "subgroup_number": 2,
     "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
-    "auditoriums": ["У кустов сирени"]
+    "auditories": ["У кустов сирени"]
   },
   {
     "id": 4380727,
@@ -345,7 +345,7 @@
     "subgroup_number": 1,
     "discipline": "Методы улавливания полезной информации",
     "teachers": ["Юксаре"],
-    "auditoriums": ["Зимний сад"]
+    "auditories": ["Зимний сад"]
   },
   {
     "id": 4381631,
@@ -357,7 +357,7 @@
     "subgroup_number": 2,
     "discipline": "Обустраивание личного пространства",
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4386754,
@@ -369,7 +369,7 @@
     "subgroup_number": 1,
     "discipline": "Собирание оригами",
     "teachers": ["Шуссель"],
-    "auditoriums": ["Зимний сад"]
+    "auditories": ["Зимний сад"]
   },
   {
     "id": 4381636,
@@ -381,7 +381,7 @@
     "subgroup_number": null,
     "discipline": "Обустраивание личного пространства",
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4373498,
@@ -393,7 +393,7 @@
     "subgroup_number": 1,
     "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
-    "auditoriums": ["У кустов сирени"]
+    "auditories": ["У кустов сирени"]
   },
   {
     "id": 4376818,
@@ -405,7 +405,7 @@
     "subgroup_number": null,
     "discipline": "Игры на музыкальных инструментах",
     "teachers": ["Морра"],
-    "auditoriums": ["Танцплощадка"]
+    "auditories": ["Танцплощадка"]
   },
   {
     "id": 4386220,
@@ -417,7 +417,7 @@
     "subgroup_number": null,
     "discipline": "Танцы",
     "teachers": ["Тофсла"],
-    "auditoriums": ["Танцплощадка"]
+    "auditories": ["Танцплощадка"]
   },
   {
     "id": 4380728,
@@ -429,7 +429,7 @@
     "subgroup_number": 1,
     "discipline": "Методы улавливания полезной информации",
     "teachers": ["Юксаре"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4376790,
@@ -441,7 +441,7 @@
     "subgroup_number": null,
     "discipline": "Плетение фенечек",
     "teachers": null,
-    "auditoriums": ["Зимний сад"]
+    "auditories": ["Зимний сад"]
   },
   {
     "id": 4370615,
@@ -453,7 +453,7 @@
     "subgroup_number": 2,
     "discipline": "Обустраивание личного пространства",
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4387483,
@@ -465,7 +465,7 @@
     "subgroup_number": null,
     "discipline": "Игры на музыкальных инструментах",
     "teachers": ["Морра"],
-    "auditoriums": ["Зимний сад"]
+    "auditories": ["Зимний сад"]
   },
   {
     "id": 4384288,
@@ -477,7 +477,7 @@
     "subgroup_number": null,
     "discipline": "Способы выпутывания из безвыходных ситуаций",
     "teachers": ["Туу-тикки"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4387486,
@@ -489,7 +489,7 @@
     "subgroup_number": null,
     "discipline": "Игры на музыкальных инструментах",
     "teachers": ["Морра"],
-    "auditoriums": ["Зимний сад"]
+    "auditories": ["Зимний сад"]
   },
   {
     "id": 4373425,
@@ -501,7 +501,7 @@
     "subgroup_number": null,
     "discipline": "Способы выпутывания из безвыходных ситуаций",
     "teachers": null,
-    "auditoriums": null
+    "auditories": null
   },
   {
     "id": 4373499,
@@ -513,7 +513,7 @@
     "subgroup_number": 2,
     "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
-    "auditoriums": ["У кустов сирени"]
+    "auditories": ["У кустов сирени"]
   },
   {
     "id": 4384347,
@@ -525,7 +525,7 @@
     "subgroup_number": 1,
     "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
-    "auditoriums": ["У кустов сирени"]
+    "auditories": ["У кустов сирени"]
   },
   {
     "id": 4387488,
@@ -537,7 +537,7 @@
     "subgroup_number": null,
     "discipline": "Игры на музыкальных инструментах",
     "teachers": ["Морра"],
-    "auditoriums": ["Танцплощадка"]
+    "auditories": ["Танцплощадка"]
   },
   {
     "id": 4380731,
@@ -549,7 +549,7 @@
     "subgroup_number": 2,
     "discipline": "Методы улавливания полезной информации",
     "teachers": ["Юксаре"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4373428,
@@ -561,7 +561,7 @@
     "subgroup_number": null,
     "discipline": "Способы выпутывания из безвыходных ситуаций",
     "teachers": ["Туу-тикки"],
-    "auditoriums": ["Зимний сад"]
+    "auditories": ["Зимний сад"]
   },
   {
     "id": 4376817,
@@ -573,7 +573,7 @@
     "subgroup_number": null,
     "discipline": "Игры на музыкальных инструментах",
     "teachers": ["Морра"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4370620,
@@ -585,7 +585,7 @@
     "subgroup_number": 1,
     "discipline": "Обустраивание личного пространства",
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   },
   {
     "id": 4386756,
@@ -597,7 +597,7 @@
     "subgroup_number": 1,
     "discipline": "Собирание оригами",
     "teachers": ["Шуссель"],
-    "auditoriums": ["Зимний сад"]
+    "auditories": ["Зимний сад"]
   },
   {
     "id": 4386757,
@@ -609,7 +609,7 @@
     "subgroup_number": 2,
     "discipline": "Собирание оригами",
     "teachers": ["Шуссель"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4381623,
@@ -621,7 +621,7 @@
     "subgroup_number": null,
     "discipline": "Основы собирания табуреток",
     "teachers": ["Ти-ти-у-у"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4384345,
@@ -633,7 +633,7 @@
     "subgroup_number": 1,
     "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
-    "auditoriums": ["Чердак"]
+    "auditories": ["Чердак"]
   },
   {
     "id": 4370618,
@@ -645,7 +645,7 @@
     "subgroup_number": 1,
     "discipline": "Обустраивание личного пространства",
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4384343,
@@ -657,7 +657,7 @@
     "subgroup_number": 1,
     "discipline": "Уборка территории",
     "teachers": ["Тюлиппа"],
-    "auditoriums": ["Чердак"]
+    "auditories": ["Чердак"]
   },
   {
     "id": 4369612,
@@ -669,7 +669,7 @@
     "subgroup_number": 2,
     "discipline": "Методы улавливания полезной информации",
     "teachers": ["Юксаре"],
-    "auditoriums": ["Грот"]
+    "auditories": ["Грот"]
   },
   {
     "id": 4380730,
@@ -681,6 +681,6 @@
     "subgroup_number": 1,
     "discipline": "Методы улавливания полезной информации",
     "teachers": ["Юксаре"],
-    "auditoriums": ["Обсерватория"]
+    "auditories": ["Обсерватория"]
   }
 ]
