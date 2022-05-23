@@ -23,7 +23,7 @@ require "alteration_table.php";
   - Тип таблицы, с которой вы хотим работать
   * * 1 - таблица расписания семестра
   * * 2 - таблица мероприятий, проектов и переносов
-  * * 3 - таблица реального времени(1 таблица корректируется под данные второй таблицы)
+  * * 3 - таблица реального времени(1 таблица корректируется под данные 2 таблицы)
   * {дата_начала}:
   - Дата, начиная с которой будет возвращаться расписание
   * * "год-месяц-день" - формат входящего значения
@@ -42,7 +42,7 @@ require "alteration_table.php";
   * * "auditories" - сортировать по аудитории
   * {заданный_атрибут_вывода}:
   - Атрибут, который будет фильтровать данные(Например вывести пары только с заданным учителем или для данной группы)
-  * * "all" - фильтра не будет, выведет всё
+  * * null - фильтра не будет, выведет всё
   * * "groups" - выведет только пары только для заданной группы
   * * "teachers" - выведет только пары только с заданным учителем
   * * "auditories" - выведет только пары с заданной аудиторией
@@ -51,7 +51,7 @@ require "alteration_table.php";
   * * ключевое слово - слово, по которому будет происходить фильтр
   * {тип_пары}:
   - Тип пар, которые мы хотим получить
-  * * -1 - все типы пар
+  * * null - все типы пар
   * * 0 - только занятия
   * * 1 - только мероприятия
   * * 2 - только проекты
@@ -135,25 +135,82 @@ function table_sort(&$table, $type_sort) {
 /* Метод, который оставляет в таблице пары только с заданными ключами */
 function table_correct_keys(&$table, $output, $output_key) {
   if ($output == null || $output_key == null) return $table;
+  
+  $size_table = count($table);
+  $search = false;
 
+  if ($output === "groups") {
+    for($i = 0; $i < $size_table; $i++) {
+      for($j = 0; $j < count($table[$i]->groups); $j++) {
+        if($table[$i]->groups[$j] === $output_key) $search = true;
+      }
+      if($search === false) unset($table[$i]);
+      $search = false;
+    }
+  } elseif ($output === "teachers") {
+    for($i = 0; $i < $size_table; $i++) {
+      for($j = 0; $j < count($table[$i]->teachers); $j++) {
+        if($table[$i]->teachers[$j] === $output_key) $search = true;
+      }
+      if($search === false) unset($table[$i]);
+      $search = false;
+    }
+  } elseif ($output === "auditories") {
+    for($i = 0; $i < $size_table; $i++) {
+      for($j = 0; $j < count($table[$i]->auditories); $j++) {
+        if($table[$i]->auditories[$j] === $output_key) $search = true;
+      }
+      if($search === false) unset($table[$i]);
+      $search = false;
+    }
+  }
+
+  $table = array_values($table);
 }
 
 /* Метод, который оставляет в таблице пары только с заданным типом */
 function table_correct_type(&$table, $type) {
   if ($type == null) return $table;
 
+  $size_table = count($table);
+
+  for($i = 0; $i < $size_table; $i++) {
+    if($table[$i]->type != $type) {
+      unset($table[$i]);
+    }
+  }
+
+  $table = array_values($table);
 }
 
 /* Метод, который оставляет в таблице пары только с заданным типом занятия */
 function table_correct_type_lessons(&$table, $type_lessons) {
   if ($type_lessons == null) return $table;
 
+  $size_table = count($table);
+
+  for($i = 0; $i < $size_table; $i++) {
+    if($table[$i]->type_lessons != $type_lessons) {
+      unset($table[$i]);
+    }
+  }
+
+  $table = array_values($table);
 }
 
 /* Метод, который оставляет в таблице занятия лабораторные только с заданным номером группы*/
 function table_correct_subgroup_number(&$table, $subgroup_number) {
   if ($subgroup_number == null) return $table;
 
+  $size_table = count($table);
+
+  for($i = 0; $i < $size_table; $i++) {
+    if($table[$i]->subgroup_number != $subgroup_number) {
+      unset($table[$i]);
+    }
+  }
+
+  $table = array_values($table);
 }
 
 /* Метод, который сортирует таблицу по дате */
