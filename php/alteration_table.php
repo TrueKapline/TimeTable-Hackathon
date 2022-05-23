@@ -1,5 +1,20 @@
 <?php
 
+/* Метод, который принимает на вход номер таблицы и возвращает эту таблицу в виде объекта */
+function output_table($table) {
+  switch ($table) {
+    case 1:
+      return json_decode(file_get_contents("../schedule.json"));        // Расписание пар в json;
+      break;
+    case 2:
+      return json_decode(file_get_contents("../queries.json"));         // Расписание мероприятий, проектов, переносов в js;
+      break;
+    case 3:
+      return json_decode(file_get_contents("../real_time_table.json")); // Раписания реального времени
+      break;
+  }
+}
+
 /* Метод, который создаёт таблицу под номер 3, исходя из данных 1 и 2 таблиц и перезаписывает в файл real_time_table.json  */
 function create_table_3() {
   $table_1 = output_table(1);
@@ -14,12 +29,12 @@ function create_table_3() {
                                           $table_1[$i]->pair,
                                           $table_1[$i]->day,
                                           week($table_1[$i]->week_beginning),
-                                          fulldate_in_table_1($table_1[$i]->week_beginning,$table_1[$i]->day),
+                                          fulldate_date_p_day($table_1[$i]->week_beginning,$table_1[$i]->day),
                                           $table_1[$i]->groups,
                                           $table_1[$i]->subgroup_number,
                                           $table_1[$i]->discipline,
                                           $table_1[$i]->teachers,
-                                          $table_1[$i]->auditoriums,
+                                          $table_1[$i]->auditories,
                                           false,
                                           null,
                                           null);
@@ -41,7 +56,7 @@ function create_table_3() {
                                             null,
                                             $table_2[$i]->description,
                                             $table_2[$i]->teachers,
-                                            $table_2[$i]->auditoriums,
+                                            $table_2[$i]->auditories,
                                             false,
                                             null,
                                             null);
@@ -57,7 +72,7 @@ function create_table_3() {
       $table_3[$s_id]->pair = $table_2[$i]->pair;
       $table_3[$s_id]->groups = $table_2[$i]->groups;
       $table_3[$s_id]->teachers = $table_2[$i]->teachers;
-      $table_3[$s_id]->auditories = $table_2[$i]->auditoriums;
+      $table_3[$s_id]->auditories = $table_2[$i]->auditories;
       $table_3[$s_id]->related_queries = $table_2[$i]->related_queries;
       $table_3[$s_id]->transfer = true;
       $table_3[$s_id]->comment = $table_2[$i]->description;
@@ -65,4 +80,9 @@ function create_table_3() {
   }
 
   file_put_contents("../real_time_table.json", json_encode($table_3, JSON_UNESCAPED_UNICODE));
+}
+
+/* Метод, который добавляет элемент в массив */
+function adder(&$table, $elem) {
+  $table[count($table)] = $elem;
 }

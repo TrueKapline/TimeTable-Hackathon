@@ -6,7 +6,7 @@
     "description": "Наблюдение за кометой",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Муми-папа"],
-    "auditoriums": ["Обсерватория"],
+    "auditories": ["Обсерватория"],
     "type": 0,
     "related_queries": [],
     "affected_schedule_id": null
@@ -18,7 +18,7 @@
     "description": "Наблюдение за кометой",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Муми-папа"],
-    "auditoriums": ["Обсерватория"],
+    "auditories": ["Обсерватория"],
     "type": 0,
     "related_queries": [],
     "affected_schedule_id": null
@@ -30,7 +30,7 @@
     "description": "Наблюдение за кометой",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Муми-папа"],
-    "auditoriums": ["Обсерватория"],
+    "auditories": ["Обсерватория"],
     "type": 0,
     "related_queries": [],
     "affected_schedule_id": null
@@ -42,7 +42,7 @@
     "description": "Наблюдение за кометой",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Муми-папа"],
-    "auditoriums": ["Обсерватория"],
+    "auditories": ["Обсерватория"],
     "type": 0,
     "related_queries": [],
     "affected_schedule_id": null
@@ -54,7 +54,7 @@
     "description": "Наблюдение за кометой",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Муми-папа"],
-    "auditoriums": ["Обсерватория"],
+    "auditories": ["Обсерватория"],
     "type": 0,
     "related_queries": [],
     "affected_schedule_id": null
@@ -66,7 +66,7 @@
     "description": "Поиск жемчужин",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -78,7 +78,7 @@
     "description": "Ловля муравьиных львов",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Тофсла и Вифсла"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -90,7 +90,7 @@
     "description": "Поиск жемчужин",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -102,7 +102,7 @@
     "description": "Составление альбомов марок",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Онкельскрут"],
-    "auditoriums": ["Зимний сад"],
+    "auditories": ["Зимний сад"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -114,7 +114,7 @@
     "description": "Поиск жемчужин",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -126,7 +126,7 @@
     "description": "Охота за волшебниками",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Пожилой господин"],
-    "auditoriums": ["Чердак"],
+    "auditories": ["Чердак"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -138,7 +138,7 @@
     "description": "Проектирование мухоловок",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Фредриксон"],
-    "auditoriums": ["Чердак"],
+    "auditories": ["Чердак"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -150,7 +150,7 @@
     "description": "Охота за волшебниками",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Пожилой господин"],
-    "auditoriums": ["Чердак"],
+    "auditories": ["Чердак"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -162,7 +162,7 @@
     "description": "Поиск внеземных существ",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Пожилой господин"],
-    "auditoriums": ["Обсерватория"],
+    "auditories": ["Обсерватория"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -174,7 +174,7 @@
     "description": "Поиск внеземных существ",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Пожилой господин"],
-    "auditoriums": ["Обсерватория"],
+    "auditories": ["Обсерватория"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -186,7 +186,7 @@
     "description": "Проектирование мухоловок",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Фредриксон"],
-    "auditoriums": ["Чердак"],
+    "auditories": ["Чердак"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -198,7 +198,7 @@
     "description": "Составление карты окрестностей",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Ондатр"],
-    "auditoriums": ["Обсерватория"],
+    "auditories": ["Обсерватория"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -210,7 +210,7 @@
     "description": "Улучшение подвесных лестниц",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Филифьонк"],
-    "auditoriums": ["Чердак"],
+    "auditories": ["Чердак"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -222,7 +222,7 @@
     "description": "Ловля солнечных зайчиков",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Дронт Эдвард"],
-    "auditoriums": ["У кустов сирени"],
+    "auditories": ["У кустов сирени"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -234,7 +234,7 @@
     "description": "Поиск лучших сортов табака",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Тофсла и Вифсла"],
-    "auditoriums": ["У кустов сирени"],
+    "auditories": ["У кустов сирени"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -246,7 +246,7 @@
     "description": "Разработка оформления ярмарки",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Муми-папа"],
-    "auditoriums": ["У кустов сирени"],
+    "auditories": ["У кустов сирени"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -258,7 +258,7 @@
     "description": "Поиск лучших сортов табака",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Тофсла и Вифсла"],
-    "auditoriums": ["Зимний сад"],
+    "auditories": ["Зимний сад"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -270,7 +270,7 @@
     "description": "Ловля солнечных зайчиков",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Дронт Эдвард"],
-    "auditoriums": ["У кустов сирени"],
+    "auditories": ["У кустов сирени"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -282,7 +282,7 @@
     "description": "Составление альбомов марок",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Онкельскрут"],
-    "auditoriums": ["Чердак"],
+    "auditories": ["Чердак"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -294,7 +294,7 @@
     "description": "Сбор бабочек",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Ондатр"],
-    "auditoriums": ["У кустов сирени"],
+    "auditories": ["У кустов сирени"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -306,7 +306,7 @@
     "description": "Поиск жемчужин",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -318,7 +318,7 @@
     "description": "Улучшение подвесных лестниц",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Филифьонк"],
-    "auditoriums": ["Обсерватория"],
+    "auditories": ["Обсерватория"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -330,7 +330,7 @@
     "description": "Сбор бабочек",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Ондатр"],
-    "auditoriums": ["У кустов сирени"],
+    "auditories": ["У кустов сирени"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -342,7 +342,7 @@
     "description": "Разработка оформления ярмарки",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Муми-папа"],
-    "auditoriums": ["У кустов сирени"],
+    "auditories": ["У кустов сирени"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -354,7 +354,7 @@
     "description": "Составление карты окрестностей",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Ондатр"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -366,7 +366,7 @@
     "description": "Ловля муравьиных львов",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Тофсла и Вифсла"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -378,7 +378,7 @@
     "description": "Сборка воздушного змея",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Тюлиппа"],
-    "auditoriums": ["У кустов сирени"],
+    "auditories": ["У кустов сирени"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -390,7 +390,7 @@
     "description": "Сборка воздушного змея",
     "groups": ["Снорки", "Муми-тролли", "Мумрики"],
     "teachers": ["Тюлиппа"],
-    "auditoriums": ["У кустов сирени"],
+    "auditories": ["У кустов сирени"],
     "type": 1,
     "related_queries": [],
     "affected_schedule_id": null
@@ -402,7 +402,7 @@
     "description": "Уборка грота",
     "groups": null,
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 0,
     "related_queries": [],
     "affected_schedule_id": null
@@ -414,7 +414,7 @@
     "description": "«Способы выпутывания из безвыходных ситуаций», перенос с 2-ой пары, причина: утром холодно",
     "groups": ["Снорки"],
     "teachers": ["Туу-тикки"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 4,
     "related_queries": [25567, 25566],
     "affected_schedule_id": 4373425
@@ -426,7 +426,7 @@
     "description": "Разовый перенос «Способы выпутывания из безвыходных ситуаций», на 4-ую пару, причина: утром холодно",
     "groups": ["Снорки"],
     "teachers": ["Туу-тикки"],
-    "auditoriums": null,
+    "auditories": null,
     "type": 3,
     "related_queries": [25567, 25566],
     "affected_schedule_id": 4373425
@@ -438,7 +438,7 @@
     "description": "Уборка грота",
     "groups": null,
     "teachers": ["Муми-мама"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 0,
     "related_queries": [],
     "affected_schedule_id": null
@@ -450,7 +450,7 @@
     "description": "1-ая подгруппа «Основы собирания табуреток», перенос с 2022.04.14, причина: После шторма будет много досок на пляже",
     "groups": ["Снорки"],
     "teachers": ["Ти-ти-у-у"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 4,
     "related_queries": [25579, 25578],
     "affected_schedule_id": 4370593
@@ -462,7 +462,7 @@
     "description": "Разовый перенос 1-ая подгруппа «Основы собирания табуреток», на 2022.04.22, причина: После шторма будет много досок на пляже",
     "groups": ["Снорки"],
     "teachers": ["Ти-ти-у-у"],
-    "auditoriums": null,
+    "auditories": null,
     "type": 3,
     "related_queries": [25579, 25578],
     "affected_schedule_id": 4370593
@@ -474,7 +474,7 @@
     "description": "Наблюдение за штормом",
     "groups": null,
     "teachers": ["Муми-папа"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 0,
     "related_queries": [],
     "affected_schedule_id": null
@@ -486,7 +486,7 @@
     "description": "Наблюдение за штормом",
     "groups": null,
     "teachers": ["Муми-папа"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 0,
     "related_queries": [],
     "affected_schedule_id": null
@@ -498,7 +498,7 @@
     "description": "Наблюдение за штормом",
     "groups": null,
     "teachers": ["Муми-папа"],
-    "auditoriums": ["Грот"],
+    "auditories": ["Грот"],
     "type": 0,
     "related_queries": [],
     "affected_schedule_id": null
