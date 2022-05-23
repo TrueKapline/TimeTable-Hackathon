@@ -2,7 +2,7 @@
 /* Тип возвращаемого контента(json) */
 header("Content-type: json/application");
 /* Запрос к файлу доступен с любого устройства */
-//header("Access-Control-Allow-Origin:•*");
+header("Access-Control-Allow-Origin:*");
 
 /* Подключаемые файлы php */
 require "error_catcher.php";
