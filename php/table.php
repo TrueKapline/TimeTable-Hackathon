@@ -9,10 +9,11 @@ require "error_catcher.php";
 require "methods_sort_table.php";
 
 /* Подгружаемые данные при вызове файла */
-$method = $_SERVER["REQUEST_METHOD"];                               // Метод пришедшего запроса(GET, POST)
-$data = json_decode(file_get_contents("php://input"));              // Данные с пришедшего запроса в виде json
-$schedule = json_decode(file_get_contents("../schedule.json"));     // Расписание пар в json
-$queries = json_decode(file_get_contents("../queries.json"));       // Расписание мероприятий, проектов, переносов в js>
+$method = $_SERVER["REQUEST_METHOD"];                                         // Метод пришедшего запроса(GET, POST)
+$data = json_decode(file_get_contents("php://input"));                        // Данные с пришедшего запроса в виде json
+$schedule = json_decode(file_get_contents("../schedule.json"));               // Расписание пар в json
+$queries = json_decode(file_get_contents("../queries.json"));                 // Расписание мероприятий, проектов, переносов в js
+$real_time_table = json_decode(file_get_contents("../real_time_table.json")); // Раписания реального времени
 
 /* Если произойдёт ошибка, то мы вернём описание ошибки и завершим программу */
 error_catcher(json_last_error());
