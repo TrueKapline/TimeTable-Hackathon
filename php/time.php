@@ -18,20 +18,24 @@ function fulldate_date_p_day($date, $day) {
 }
 
 /* Метод, который принимает в качестве аргумента дату год-месяц-день,
-  а возвращает номер недели с 1970 года(5 января - понедельник) по входящую дату */
+  а возвращает номер недели с 1970 года(12 января - понедельник) по входящую дату */
 function week($date) {
   $array = explode("-", $date);
   $array[0] = (int)$array[0];
   $array[1] = (int)$array[1];
   $array[2] = (int)$array[2];
-  return (int)((mktime(0, 0, 0, $array[1], $array[2], $array[0]) - mktime(0, 0, 0, 1, 5, 1970))/604800);
+  return (int)((mktime(0, 0, 0, $array[1], $array[2], $array[0]) - mktime(0, 0, 0, 1, 12, 1970))/604800);
 }
 
 /* Метод, который возвращает день недели по входящей дате */
 function day($date) {
   $array = explode("-", $date);
-  $day = (int)$array[2];
-  $array = explode("-", date("Y-m-d",week($date)*604800+4*86400));
-  $day_start_week = (int)$array[2];
-  return $day - $day_start_week + 1;
+  $array[0] = (int)$array[0];
+  $array[1] = (int)$array[1];
+  $array[2] = (int)$array[2];
+  $array1 = explode("-", date("Y-m-d",week($date)*604800+11*86400));
+  $array1[0] = (int)$array1[0];
+  $array1[1] = (int)$array1[1];
+  $array1[2] = (int)$array1[2];
+  return (int)((mktime(0, 0, 0, $array[1], $array[2], $array[0]) - mktime(0, 0, 0, $array1[1], $array1[2], $array1[0]))/86400) + 1;
 }

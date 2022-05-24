@@ -13,11 +13,14 @@ require "alteration_table.php";
   * day_count: количество_дней
   * pair_number: номер_пары 
   * type_sort: тип_сортировки
-  * output: заданный_атрибут_вывода
-  * output_key: ключ_вывода
+  * output: [заданный_атрибут_вывода_1, заданный_атрибут_вывода_2, ...]
+  * output_key: [ключ_вывода_1, ключ_вывода_2, ...]
   * type: тип_пары
   * type_lessons: тип_занятия
   * subgroup_number: номер_подгруппы
+  * delete_pair: выводить_ли_удалённые_пары(null - true)
+  * search: текст_поиска
+  * search_type: тип_поиска
   ---Только для 3 таблицы---
 
   Возможные значения атрибутов:
@@ -77,19 +80,33 @@ require "alteration_table.php";
   * * null - если тип занятия не лаборатная
   * * 1 - первая подгруппа
   * * 2 - вторая подгруппа
+  * {выводить_ли_удалённые_пары}:
+  - Нужно ли выводить удалённые или перенесённые пары
+  * * true - да
+  * * false - нет
+  * {текст_поиска}:
+  - По этому тексту поиска сортируется расписание
+  * * строка - обычная стрик строка с буковками
+  * {тип_поиска}:
+  - Какие параметры мы будем подвергать поиску
+  * * null - поиск по всему
+  * * title - поиск по названию
 */
 
 /* Главный метод сортировки, который определяет,
   как сортировать расписание по входным данным запроса */
 function sort_schedule($data) {
-  $sort_schedule = output_table($data->table);
+  $sort_schedule = output_table($data->table, $data->date, $data->day_count);
   
   table_correct_date($sort_schedule, $data->date, $data->day_count);
   table_correct_pair($sort_schedule, $data->pair_number);
-  table_correct_keys($sort_schedule, $data->output, $data->output_key);
+  for($i = 0; $i < count($data->output); $i++)
+    table_correct_keys($sort_schedule, $data->output[$i], $data->output_key[$i]);
   table_correct_type($sort_schedule, $data->type);
   table_correct_type_lessons($sort_schedule, $data->type_lessons);
   table_correct_subgroup_number($sort_schedule, $data->subgroup_number);
+  table_correct_delete_pair($sort_schedule, $data->delete_pair);
+  table_search($sort_schedule, $data->search, $data->search_type);
   table_sort($sort_schedule, $data->type_sort);
 
   return $sort_schedule;
@@ -260,6 +277,41 @@ function table_correct_subgroup_number(&$table, $subgroup_number) {
   for($i = 0; $i < $size_table; $i++) {
     if($table[$i]->subgroup_number != $subgroup_number) {
       unset($table[$i]);
+    }
+  }
+
+  $table = array_values($table);
+}
+
+function table_correct_delete_pair(&$table, $delete_pair) {
+  if ($delete_pair === null) return $table;
+
+  $size_table = count($table);
+
+  for($i = 0; $i < $size_table; $i++) {
+    if($table[$i]->transfer_type === 1 || $table[$i]->transfer_type === 3) {
+      unset($table[$i]);
+    }
+  }
+
+  $table = array_values($table);
+}
+
+/* Метод, который делает поиск по входящей строке в таблице и возвращает таблицу с подходящим условием */
+function table_search(&$table, $search, $search_type) {
+  if ($search === null) return $table;
+
+  $size_table = count($table);
+
+  if ($search_type === "title") {
+    for($i = 0; $i < $size_table; $i++) {
+      if(mb_stripos($table[$i]->title, $search) === false) {
+        unset($table[$i]);
+      }
+    }
+  } elseif ($search_type === null) {
+    for($i = 0; $i < $size_table; $i++) {
+      
     }
   }
 

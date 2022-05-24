@@ -14,13 +14,13 @@ class real_time_schedule {
   public $title;                // Название пары
   public $teachers = [];        // Учителя, которые будут вести пару
   public $auditories = [];      // Аудитории, которые задействованы для занятия
-  public $transfer = false;     // Перенесена ли данная пара
-  public $related_queries = []; // ID запросов на перенос: первый запрос - какая пара перенеслась, второй запрос - куда перенеслась пара
+  public $transfer_type;        // Тип переноса пары: 0 - статическая пар, 1 - пару перенесли с этой даты, 2 - пару перенесли на эту дату, 3 - пару удалили, 4 - пару добавили
+  public $id_family = [];       // ID пары, которая была перенесена
   public $comment;              // Комментарий к паре
 
   /* Конструктор со всеми параметрами */
   public function __construct($type, $type_lessons, $id, $pair, $day, $week, $date, $groups, $subgroup_number,
-                              $title, $teachers, $auditories, $transfer, $related_queries, $comment) {
+                              $title, $teachers, $auditories, $transfer_type, $id_family, $comment) {
     $this->type = $type;
     $this->type_lessons = $type_lessons;
     $this->id = $id;
@@ -33,8 +33,8 @@ class real_time_schedule {
     $this->title = $title;
     $this->teachers = $teachers;
     $this->auditories = $auditories;
-    $this->transfer = $transfer;
-    $this->related_queries = $related_queries;
+    $this->transfer_type = $transfer_type;
+    $this->id_family = $id_family;
     $this->comment = $comment;
   }
 }
