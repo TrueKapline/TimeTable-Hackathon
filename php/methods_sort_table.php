@@ -19,6 +19,8 @@ require "alteration_table.php";
   * type_lessons: тип_занятия
   * subgroup_number: номер_подгруппы
   * delete_pair: выводить_ли_удалённые_пары(null - true)
+  * search: текст_поиска
+  * search_type: тип_поиска
   ---Только для 3 таблицы---
 
   Возможные значения атрибутов:
@@ -82,6 +84,13 @@ require "alteration_table.php";
   - Нужно ли выводить удалённые или перенесённые пары
   * * true - да
   * * false - нет
+  * {текст_поиска}:
+  - По этому тексту поиска сортируется расписание
+  * * строка - обычная стрик строка с буковками
+  * {тип_поиска}:
+  - Какие параметры мы будем подвергать поиску
+  * * null - поиск по всему
+  * * title - поиск по названию
 */
 
 /* Главный метод сортировки, который определяет,
@@ -97,6 +106,7 @@ function sort_schedule($data) {
   table_correct_type_lessons($sort_schedule, $data->type_lessons);
   table_correct_subgroup_number($sort_schedule, $data->subgroup_number);
   table_correct_delete_pair($sort_schedule, $data->delete_pair);
+  table_search($sort_schedule, $data->search, $data->search_type);
   table_sort($sort_schedule, $data->type_sort);
 
   return $sort_schedule;
@@ -281,6 +291,23 @@ function table_correct_delete_pair(&$table, $delete_pair) {
   for($i = 0; $i < $size_table; $i++) {
     if($table[$i]->transfer_type === 1 || $table[$i]->transfer_type === 3) {
       unset($table[$i]);
+    }
+  }
+
+  $table = array_values($table);
+}
+
+/* Метод, который делает поиск по входящей строке в таблице и возвращает таблицу с подходящим условием */
+function table_search(&$table, $search, $search_type) {
+  if ($search === null) return $table;
+
+  $size_table = count($table);
+
+  if ($search_type === "title") {
+    for($i = 0; $i < $size_table; $i++) {
+      if(mb_stripos($table[$i]->title, $search) === false) {
+        unset($table[$i]);
+      }
     }
   }
 
