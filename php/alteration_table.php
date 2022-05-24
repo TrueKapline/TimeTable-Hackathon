@@ -5,8 +5,8 @@
 //require "methods_sort_table.php";// ВРЕМЕННО. УДАЛИТЬ
 
 /* Метод, который принимает на вход номер таблицы и возвращает эту таблицу в виде объекта */
-function output_table($data) {
-  switch ($data->table) {
+function output_table($table, $date, $day_count) {
+  switch ($table) {
     case 1:
       return json_decode(file_get_contents("../semester_schedule.json"));   // Расписание пар
       break;
@@ -14,14 +14,14 @@ function output_table($data) {
       return json_decode(file_get_contents("../queries.json"));             // Расписание мероприятий, проектов, переносов
       break;
     case 3:
-      return create_real_time_table($data->date, $data->day_count);         // Раписания реального времени
+      return create_real_time_table($date, $day_count);         // Раписания реального времени
       break;
   }
 }
 
 function test($date, $day_count) {
-  $table_1 = output_table(1);
-  $table_2 = output_table(2);
+  $table_1 = output_table(1, null, null);
+  $table_2 = output_table(2, null, null);
   $table_3 = [];
   
   while($day_count > 0) {
@@ -95,8 +95,8 @@ function test($date, $day_count) {
 
 /* Метод, который создаёт таблицу, исходя из данных 1 и 2 таблиц и возвращает её  */
 function create_real_time_table($date, $day_count) {
-  $table_1 = output_table(1);
-  $table_2 = output_table(2);
+  $table_1 = output_table(1, null, null);
+  $table_2 = output_table(2, null, null);
   $table_3 = [];
   
   while($day_count > 0) {

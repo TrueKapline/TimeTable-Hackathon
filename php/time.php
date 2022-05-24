@@ -39,5 +39,3 @@ function day($date) {
   $array1[2] = (int)$array1[2];
   return (int)((mktime(0, 0, 0, $array[1], $array[2], $array[0]) - mktime(0, 0, 0, $array1[1], $array1[2], $array1[0]))/86400) + 1;
 }
-
-echo week("2022-04-10");

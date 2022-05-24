@@ -1,9 +1,9 @@
 <?php
 
 /* Подключаемые файлы php */
-//require "real_time_schedule.php";
-//require "time.php";
-//require "alteration_table.php";
+require "real_time_schedule.php";
+require "time.php";
+require "alteration_table.php";
 
 /*
   Атрибуты сортировки:
@@ -82,7 +82,7 @@
 /* Главный метод сортировки, который определяет,
   как сортировать расписание по входным данным запроса */
 function sort_schedule($data) {
-  $sort_schedule = output_table($data);
+  $sort_schedule = output_table($data->table, $data->date, $data->day_count);
   
   table_correct_date($sort_schedule, $data->date, $data->day_count);
   table_correct_pair($sort_schedule, $data->pair_number);
