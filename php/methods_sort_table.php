@@ -309,6 +309,10 @@ function table_search(&$table, $search, $search_type) {
         unset($table[$i]);
       }
     }
+  } elseif ($search_type === null) {
+    for($i = 0; $i < $size_table; $i++) {
+      
+    }
   }
 
   $table = array_values($table);
