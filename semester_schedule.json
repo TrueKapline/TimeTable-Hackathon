@@ -12,8 +12,8 @@
 	"title": "Собирание оригами",
 	"teachers": ["Шуссель"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -29,8 +29,8 @@
 	"title": "Собирание оригами",
 	"teachers": ["Шуссель"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -46,8 +46,8 @@
 	"title": "Собирание оригами",
 	"teachers": ["Шуссель"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -63,8 +63,8 @@
 	"title": "Собирание оригами",
 	"teachers": ["Шуссель"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -80,8 +80,8 @@
 	"title": "Плетение фенечек",
 	"teachers": null,
 	"auditories": ["Зимний сад"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -97,8 +97,8 @@
 	"title": "Уборка территории",
 	"teachers": ["Тюлиппа"],
 	"auditories": ["У кустов сирени"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -114,8 +114,8 @@
 	"title": "Уборка территории",
 	"teachers": ["Тюлиппа"],
 	"auditories": ["Чердак"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -131,8 +131,8 @@
 	"title": "Игры на музыкальных инструментах",
 	"teachers": ["Морра"],
 	"auditories": ["Танцплощадка"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -148,8 +148,8 @@
 	"title": "Методы улавливания полезной информации",
 	"teachers": ["Юксаре"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -165,8 +165,8 @@
 	"title": "Методы улавливания полезной информации",
 	"teachers": ["Юксаре"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -182,8 +182,8 @@
 	"title": "Методы улавливания полезной информации",
 	"teachers": ["Юксаре"],
 	"auditories": ["Зимний сад"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -199,8 +199,8 @@
 	"title": "Собирание оригами",
 	"teachers": ["Муми-папа"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -216,8 +216,8 @@
 	"title": "Собирание оригами",
 	"teachers": ["Шуссель"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -233,8 +233,8 @@
 	"title": "Обустраивание личного пространства",
 	"teachers": ["Муми-мама"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -250,8 +250,8 @@
 	"title": "Методы улавливания полезной информации",
 	"teachers": ["Юксаре"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -267,8 +267,8 @@
 	"title": "Основы собирания табуреток",
 	"teachers": ["Ти-ти-у-у"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -284,8 +284,8 @@
 	"title": "Уборка территории",
 	"teachers": ["Тюлиппа"],
 	"auditories": ["У кустов сирени"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -301,8 +301,8 @@
 	"title": "Обустраивание личного пространства",
 	"teachers": ["Муми-мама"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -318,8 +318,8 @@
 	"title": "Плетение фенечек",
 	"teachers": null,
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -335,8 +335,8 @@
 	"title": "Игры на музыкальных инструментах",
 	"teachers": ["Морра"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -352,8 +352,8 @@
 	"title": "Обустраивание личного пространства",
 	"teachers": ["Муми-мама"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -369,8 +369,8 @@
 	"title": "Основы собирания табуреток",
 	"teachers": ["Ти-ти-у-у"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -386,8 +386,8 @@
 	"title": "Основы собирания табуреток",
 	"teachers": ["Ти-ти-у-у"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -403,8 +403,8 @@
 	"title": "Плетение фенечек",
 	"teachers": null,
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -420,8 +420,8 @@
 	"title": "Обустраивание личного пространства",
 	"teachers": ["Муми-мама"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -437,8 +437,8 @@
 	"title": "Обустраивание личного пространства",
 	"teachers": ["Муми-мама"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -454,8 +454,8 @@
 	"title": "Основы собирания табуреток",
 	"teachers": null,
 	"auditories": null,
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -471,8 +471,8 @@
 	"title": "Уборка территории",
 	"teachers": ["Тюлиппа"],
 	"auditories": ["У кустов сирени"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -488,8 +488,8 @@
 	"title": "Методы улавливания полезной информации",
 	"teachers": ["Юксаре"],
 	"auditories": ["Зимний сад"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -505,8 +505,8 @@
 	"title": "Обустраивание личного пространства",
 	"teachers": ["Муми-мама"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -522,8 +522,8 @@
 	"title": "Собирание оригами",
 	"teachers": ["Шуссель"],
 	"auditories": ["Зимний сад"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -539,8 +539,8 @@
 	"title": "Обустраивание личного пространства",
 	"teachers": ["Муми-мама"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -556,8 +556,8 @@
 	"title": "Уборка территории",
 	"teachers": ["Тюлиппа"],
 	"auditories": ["У кустов сирени"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -573,8 +573,8 @@
 	"title": "Игры на музыкальных инструментах",
 	"teachers": ["Морра"],
 	"auditories": ["Танцплощадка"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -590,8 +590,8 @@
 	"title": "Танцы",
 	"teachers": ["Тофсла"],
 	"auditories": ["Танцплощадка"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -607,8 +607,8 @@
 	"title": "Методы улавливания полезной информации",
 	"teachers": ["Юксаре"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -624,8 +624,8 @@
 	"title": "Плетение фенечек",
 	"teachers": null,
 	"auditories": ["Зимний сад"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -641,8 +641,8 @@
 	"title": "Обустраивание личного пространства",
 	"teachers": ["Муми-мама"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -658,8 +658,8 @@
 	"title": "Игры на музыкальных инструментах",
 	"teachers": ["Морра"],
 	"auditories": ["Зимний сад"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -675,8 +675,8 @@
 	"title": "Способы выпутывания из безвыходных ситуаций",
 	"teachers": ["Туу-тикки"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -692,8 +692,8 @@
 	"title": "Игры на музыкальных инструментах",
 	"teachers": ["Морра"],
 	"auditories": ["Зимний сад"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -709,8 +709,8 @@
 	"title": "Способы выпутывания из безвыходных ситуаций",
 	"teachers": null,
 	"auditories": null,
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -726,8 +726,8 @@
 	"title": "Уборка территории",
 	"teachers": ["Тюлиппа"],
 	"auditories": ["У кустов сирени"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -743,8 +743,8 @@
 	"title": "Уборка территории",
 	"teachers": ["Тюлиппа"],
 	"auditories": ["У кустов сирени"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -760,8 +760,8 @@
 	"title": "Игры на музыкальных инструментах",
 	"teachers": ["Морра"],
 	"auditories": ["Танцплощадка"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -777,8 +777,8 @@
 	"title": "Методы улавливания полезной информации",
 	"teachers": ["Юксаре"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -794,8 +794,8 @@
 	"title": "Способы выпутывания из безвыходных ситуаций",
 	"teachers": ["Туу-тикки"],
 	"auditories": ["Зимний сад"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -811,8 +811,8 @@
 	"title": "Игры на музыкальных инструментах",
 	"teachers": ["Морра"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -828,8 +828,8 @@
 	"title": "Обустраивание личного пространства",
 	"teachers": ["Муми-мама"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -845,8 +845,8 @@
 	"title": "Собирание оригами",
 	"teachers": ["Шуссель"],
 	"auditories": ["Зимний сад"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -862,8 +862,8 @@
 	"title": "Собирание оригами",
 	"teachers": ["Шуссель"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -879,8 +879,8 @@
 	"title": "Основы собирания табуреток",
 	"teachers": ["Ти-ти-у-у"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -896,8 +896,8 @@
 	"title": "Уборка территории",
 	"teachers": ["Тюлиппа"],
 	"auditories": ["Чердак"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -913,8 +913,8 @@
 	"title": "Обустраивание личного пространства",
 	"teachers": ["Муми-мама"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -930,8 +930,8 @@
 	"title": "Уборка территории",
 	"teachers": ["Тюлиппа"],
 	"auditories": ["Чердак"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -947,8 +947,8 @@
 	"title": "Методы улавливания полезной информации",
 	"teachers": ["Юксаре"],
 	"auditories": ["Грот"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 },
 {
@@ -964,7 +964,7 @@
 	"title": "Методы улавливания полезной информации",
 	"teachers": ["Юксаре"],
 	"auditories": ["Обсерватория"],
-	"transfer": false,
-	"related_queries": null,
+	"transfer_type": 0,
+	"id_family": null,
 	"comment": null
 }]
