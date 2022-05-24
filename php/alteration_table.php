@@ -81,21 +81,22 @@ function create_real_time_table($date, $day_count) {
       } 
       /* Для пары, которая переносится на данную дату */
       elseif($table_2[$i]->type === 4 && $table_2[$i]->dt === $date) {
-        $s_id = search_id($table_3, $table_2[search_id($table_2, $table_2[$i]->related_queries[1])]->affected_schedule_id);
+        $s_id = rasparsID($table_2[search_id($table_2, $table_2[$i]->related_queries[1])]->affected_schedule_id);
+
         $array = [];
         $array[0] = $table_2[$i]->affected_schedule_id;
         $array[1] = $table_2[search_id($table_2, $table_2[$i]->related_queries[1])]->affected_schedule_id;
 
-        $real_time_schedule = new real_time_schedule($table_3[$s_id]->type,
-                                          $table_3[$s_id]->type_lessons,
+        $real_time_schedule = new real_time_schedule($table_1[$s_id]->type,
+                                          $table_1[$s_id]->type_lessons,
                                           $table_2[$i]->affected_schedule_id,
                                           $table_2[$i]->pair,
                                           day($table_2[$i]->dt),
                                           week($table_2[$i]->dt)%2 + 1,
                                           $table_2[$i]->dt,
                                           $table_2[$i]->groups,
-                                          $table_3[$s_id]->subgroup_number,
-                                          $table_3[$s_id]->title,
+                                          $table_1[$s_id]->subgroup_number,
+                                          $table_1[$s_id]->title,
                                           $table_2[$i]->teachers,
                                           $table_2[$i]->auditories,
                                           2,
@@ -121,4 +122,10 @@ function adder(&$table, $elem) {
 function generateID($date, $id) {
   $array = explode("-", $date);
   return (int)($array[0] . $array[1] . $array[2] . $id);
+}
+
+/* Метод, который получает сгенерированную пару, а возвращает id родителя, от которого генерировалась пара 
+  ------ потомки, если вы будете использовать этот код в 10000 году, то эта функция будет неправильно работать -----*/
+function rasparsID($id) {
+  return (int)substr($id, 8);
 }

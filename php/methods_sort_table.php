@@ -91,7 +91,7 @@ function sort_schedule($data) {
   
   table_correct_date($sort_schedule, $data->date, $data->day_count);
   table_correct_pair($sort_schedule, $data->pair_number);
-  for($i = 0; $i < count($output); $i++)
+  for($i = 0; $i < count($data->output); $i++)
     table_correct_keys($sort_schedule, $data->output[$i], $data->output_key[$i]);
   table_correct_type($sort_schedule, $data->type);
   table_correct_type_lessons($sort_schedule, $data->type_lessons);
