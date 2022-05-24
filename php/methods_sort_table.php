@@ -18,6 +18,7 @@ require "alteration_table.php";
   * type: тип_пары
   * type_lessons: тип_занятия
   * subgroup_number: номер_подгруппы
+  * delete_pair: выводить_ли_удалённые_пары(null - true)
   ---Только для 3 таблицы---
 
   Возможные значения атрибутов:
@@ -77,6 +78,10 @@ require "alteration_table.php";
   * * null - если тип занятия не лаборатная
   * * 1 - первая подгруппа
   * * 2 - вторая подгруппа
+  * {выводить_ли_удалённые_пары}:
+  - Нужно ли выводить удалённые или перенесённые пары
+  * * true - да
+  * * false - нет
 */
 
 /* Главный метод сортировки, который определяет,
@@ -90,6 +95,7 @@ function sort_schedule($data) {
   table_correct_type($sort_schedule, $data->type);
   table_correct_type_lessons($sort_schedule, $data->type_lessons);
   table_correct_subgroup_number($sort_schedule, $data->subgroup_number);
+  table_correct_delete_pair($sort_schedule, $data->delete_pair);
   table_sort($sort_schedule, $data->type_sort);
 
   return $sort_schedule;
@@ -259,6 +265,20 @@ function table_correct_subgroup_number(&$table, $subgroup_number) {
 
   for($i = 0; $i < $size_table; $i++) {
     if($table[$i]->subgroup_number != $subgroup_number) {
+      unset($table[$i]);
+    }
+  }
+
+  $table = array_values($table);
+}
+
+function table_correct_delete_pair(&$table, $delete_pair) {
+  if ($delete_pair === null) return $table;
+
+  $size_table = count($table);
+
+  for($i = 0; $i < $size_table; $i++) {
+    if($table[$i]->transfer_type === 1 || $table[$i]->transfer_type === 3) {
       unset($table[$i]);
     }
   }
