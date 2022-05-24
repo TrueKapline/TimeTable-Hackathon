@@ -13,8 +13,8 @@ require "alteration_table.php";
   * day_count: количество_дней
   * pair_number: номер_пары 
   * type_sort: тип_сортировки
-  * output: заданный_атрибут_вывода
-  * output_key: ключ_вывода
+  * output: [заданный_атрибут_вывода_1, заданный_атрибут_вывода_2, ...]
+  * output_key: [ключ_вывода_1, ключ_вывода_2, ...]
   * type: тип_пары
   * type_lessons: тип_занятия
   * subgroup_number: номер_подгруппы
@@ -91,7 +91,8 @@ function sort_schedule($data) {
   
   table_correct_date($sort_schedule, $data->date, $data->day_count);
   table_correct_pair($sort_schedule, $data->pair_number);
-  table_correct_keys($sort_schedule, $data->output, $data->output_key);
+  for($i = 0; $i < count($output); $i++)
+    table_correct_keys($sort_schedule, $data->output[$i], $data->output_key[$i]);
   table_correct_type($sort_schedule, $data->type);
   table_correct_type_lessons($sort_schedule, $data->type_lessons);
   table_correct_subgroup_number($sort_schedule, $data->subgroup_number);
