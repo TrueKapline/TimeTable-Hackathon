@@ -417,19 +417,19 @@
     "auditories": ["Грот"],
     "type": 4,
     "related_queries": [25567, 25566],
-    "affected_schedule_id": 4373425
+    "affected_schedule_id": 2022041510000
   },
   {
     "id": 25567,
-    "dt": "2022-04-15",
-    "pair": 2,
+    "dt": null,
+    "pair": null,
     "description": "Разовый перенос «Способы выпутывания из безвыходных ситуаций», на 4-ую пару, причина: утром холодно",
-    "groups": ["Снорки"],
-    "teachers": ["Туу-тикки"],
+    "groups": null,
+    "teachers": null,
     "auditories": null,
     "type": 3,
     "related_queries": [25567, 25566],
-    "affected_schedule_id": 4373425
+    "affected_schedule_id": 2022041542
   },
   {
     "id": 25575,
@@ -453,19 +453,14 @@
     "auditories": ["Грот"],
     "type": 4,
     "related_queries": [25579, 25578],
-    "affected_schedule_id": 4370593
+    "affected_schedule_id": 2022042210001
   },
   {
     "id": 25579,
-    "dt": "2022-04-14",
-    "pair": 2,
     "description": "Разовый перенос 1-ая подгруппа «Основы собирания табуреток», на 2022.04.22, причина: После шторма будет много досок на пляже",
-    "groups": ["Снорки"],
-    "teachers": ["Ти-ти-у-у"],
-    "auditories": null,
     "type": 3,
     "related_queries": [25579, 25578],
-    "affected_schedule_id": 4370593
+    "affected_schedule_id": 2022041427
   },
   {
     "id": 25580,
