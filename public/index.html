@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React App</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header class="header">
+        <div class="header__container _container">
+                    <div class="header__body">
+                        <a href="" class="header__logo">
+                            <img class="logo__img" src="img/logo.svg" alt="Logo">
+                            <span class="logo__title">UpTable</span>
+                        </a>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                    </div>
+                <nav class="header__menu">
+                    <ul class="menu__items">
+                        <form action="timetable.html">
+                            <button class="menu__item">
+                            <div class="item__info">
+                                <img src="img/navbar/timetable.svg" alt="">
+                                <a href="timetable.html" class="info__link">Расписание</a>
+                            </div>
+                            <div class="info__img">
+                                <img class="img__arrow" src="img/navbar/arrow1.svg" alt="">
+                            </div>
+                        </button>
+                    </form>
+                    <form action="calendar.html">
+                        <button class="menu__item__active">
+                            <div class="item__active _active">
+
+                            </div>
+                            <div class="item__info">
+                                <img src="img/navbar/calendar.svg" alt="">
+                                <a href="calendar.html" class="info__link">Календарь</a>
+                            </div>
+                            <div class="info__img">
+                                <img class="img__arrow" src="img/navbar/arrow1.svg" alt="">
+                            </div>
+                        </button>
+                    </form>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <main class="page"> 
+        <div class="">
+            <div class="calendar__calendar__container">
+                <section class="calendar__calendar__table">
+                    <div id="root"></div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <div id="preloader_malc">
+
+        <div>
+    
+            <img src='./img/10.gif' style="width: 75px;"></img>
+    
+        </div>
+    
+    </div>
+    
+    <style type="text/css">
+        #preloader_malc {
+            position: fixed;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            opacity: 90%;
+            z-index: 99;
+            transition: all 0.5s ease;
+        }
+    
+        #preloader_malc div {
+            background: #fff;
+            width: 75px;
+            height: 75px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            
+        }
+    </style>
+    
+    <script type="text/javascript">
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById("preloader_malc").style.opacity = "0%";
+                document.getElementById("preloader_malc").style.zIndex = "-1";
+            }, 2000);
+        };
+    </script>
+  </body>
+</html>

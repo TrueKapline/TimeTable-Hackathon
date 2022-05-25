@@ -1,0 +1,84 @@
+.calendar {
+    &_title{
+        &_table{
+            color: #DCC3BC;
+        }
+    }
+    &_old_num{
+        color: #eadbd7;
+    }
+    &__container{
+        &__month {
+            height: calc(100vh - 100px);
+        }
+    }
+}
+
+.border__table {
+    border: 1px solid #eadbd7;
+    border-bottom: none;
+    overflow: hidden;
+    max-height: 100%;
+  }
+
+.container_for_tasks {
+    height: 100%;
+    overflow: hidden;
+    &_2 {
+        height: 100%;
+        overflow: auto;
+        margin: 0 1vw;
+    }
+}
+
+.title_tasks {
+    font-size: 14px;
+}
+
+.part_task {
+    margin: 0px 12px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.container_part_task {
+    color: #ffffff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 25px;
+    background-color: #000000;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.container_for_tasks_2::-webkit-scrollbar {
+    display: none; /*chrome*/
+  }
+
+.container_for_tasks_2 {
+    overflow-y: scroll;
+    scrollbar-width: none; /*mozilla*/
+}
+
+._task {
+    &_green {
+        background-color: #6D9F71;
+        
+    }
+    &_blue {
+        background-color: #4F7CAC;
+        &_task_pink{
+            &_task_green {
+                background: linear-gradient(45deg, #4F7CAC, #FF99B4,  #6D9F71);
+            }
+        }
+
+    }&_pink {
+        background-color: #FF99B4;
+        &_task_green {
+            background: linear-gradient(45deg, #FF99B4, #6D9F71);
+        }
+    }
+    
+}
