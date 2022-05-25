@@ -1,0 +1,12 @@
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# Sublime project files
+*.sublime-project
+*.sublime-workspace
+
+# VSCode project files
+.vscode/
