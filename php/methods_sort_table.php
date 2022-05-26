@@ -135,7 +135,7 @@ function table_correct_pair(&$table, $pair_number) {
   $size_table = count($table);
 
   for($i = 0; $i < $size_table; $i++) {
-    if($table[$i]->pair != $pair_number) {
+    if($table[$i]->pair !== $pair_number) {
       unset($table[$i]);
     }
   }
@@ -193,43 +193,43 @@ function table_correct_keys(&$table, $output, $output_key) {
     }
   } elseif ($output === "events") {
     for($i = 0; $i < $size_table; $i++) {
-      if($table[$i]->title != $output_key || $table[$i]->type != 1) {
+      if($table[$i]->title !== $output_key || $table[$i]->type !== 1) {
         unset($table[$i]);
       }
     }
   } elseif ($output === "projects") {
     for($i = 0; $i < $size_table; $i++) {
-      if($table[$i]->title != $output_key || $table[$i]->type != 2) {
+      if($table[$i]->title !== $output_key || $table[$i]->type !== 2) {
         unset($table[$i]);
       }
     }
   } elseif ($output === "title") {
     for($i = 0; $i < $size_table; $i++) {
-      if($table[$i]->title != $output_key) {
+      if($table[$i]->title !== $output_key) {
         unset($table[$i]);
       }
     }
   } elseif ($output === "lesson") {
     for($i = 0; $i < $size_table; $i++) {
-      if($table[$i]->title != $output_key || $table[$i]->type != 0) {
+      if($table[$i]->title !== $output_key || $table[$i]->type !== 0) {
         unset($table[$i]);
       }
     }
   } elseif ($output === "lecture") {
     for($i = 0; $i < $size_table; $i++) {
-      if($table[$i]->title != $output_key || $table[$i]->type != 0 || $table[$i]->type_lesson != 0) {
+      if($table[$i]->title !== $output_key || $table[$i]->type !== 0 || $table[$i]->type_lesson !== 0) {
         unset($table[$i]);
       }
     }
   } elseif ($output === "practice") {
     for($i = 0; $i < $size_table; $i++) {
-      if($table[$i]->title != $output_key || $table[$i]->type != 0 || $table[$i]->type_lesson != 1) {
+      if($table[$i]->title !== $output_key || $table[$i]->type !== 0 || $table[$i]->type_lesson !== 1) {
         unset($table[$i]);
       }
     }
   } elseif ($output === "laboratory") {
     for($i = 0; $i < $size_table; $i++) {
-      if($table[$i]->title != $output_key || $table[$i]->type != 0 || $table[$i]->type_lesson != 2) {
+      if($table[$i]->title !== $output_key || $table[$i]->type !== 0 || $table[$i]->type_lesson !== 2) {
         unset($table[$i]);
       }
     }
@@ -245,7 +245,7 @@ function table_correct_type(&$table, $type) {
   $size_table = count($table);
 
   for($i = 0; $i < $size_table; $i++) {
-    if($table[$i]->type != $type) {
+    if($table[$i]->type !== $type) {
       unset($table[$i]);
     }
   }
@@ -260,7 +260,7 @@ function table_correct_type_lessons(&$table, $type_lessons) {
   $size_table = count($table);
 
   for($i = 0; $i < $size_table; $i++) {
-    if($table[$i]->type_lessons != $type_lessons) {
+    if($table[$i]->type_lessons !== $type_lessons) {
       unset($table[$i]);
     }
   }
@@ -275,7 +275,7 @@ function table_correct_subgroup_number(&$table, $subgroup_number) {
   $size_table = count($table);
 
   for($i = 0; $i < $size_table; $i++) {
-    if($table[$i]->subgroup_number != $subgroup_number) {
+    if($table[$i]->subgroup_number !== $subgroup_number) {
       unset($table[$i]);
     }
   }
@@ -302,6 +302,7 @@ function table_search(&$table, $search, $search_type) {
   if ($search === null) return $table;
 
   $size_table = count($table);
+  $search_activ = false;
 
   if ($search_type === "title") {
     for($i = 0; $i < $size_table; $i++) {
@@ -311,7 +312,23 @@ function table_search(&$table, $search, $search_type) {
     }
   } elseif ($search_type === null) {
     for($i = 0; $i < $size_table; $i++) {
-      
+      if(mb_stripos($table[$i]->title, $search) !== false) {
+        $search_activ = true;
+      }
+      for($j = 0; $j < count($table[$i]->groups); $j++) {
+        if(mb_stripos($table[$i]->groups[$j], $search) !== false) $search_activ = true;
+      }
+      for($j = 0; $j < count($table[$i]->teachers); $j++) {
+        if(mb_stripos($table[$i]->teachers[$j], $search) !== false) $search_activ = true;
+      }
+      for($j = 0; $j < count($table[$i]->auditories); $j++) {
+        if(mb_stripos($table[$i]->auditories[$j], $search) !== false) $search_activ = true;
+      }
+
+      if($search_activ === false) {
+        unset($table[$i]);
+      }
+      $search_activ = false;
     }
   }
 
