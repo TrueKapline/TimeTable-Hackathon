@@ -1,13 +1,12 @@
 .page {
     width: 100%;
-    
+     
     &__header {
         height: 100px;
         width: 100%;
 
         &__container {
         height: 100%;
-        display: flex;
         margin-left: 20%;
         margin-right: 8.5vw;
         justify-content: space-between;

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="css/style_2.css">
+</head>
+<body>
+    <div class="wrapper">
+        <navbar class="navbar">
+            <div class="navbar__container _container">
+                        <div class="navbar__body">
+                            <a href="" class="navbar__logo">
+                                <img class="logo__img" src="img/logo.svg" alt="Logo">
+                                <span class="logo__title">UpTable</span>
+                            </a>
+                            <div class="navbar__burger">
+                                <span></span>
+                            </div>
+                        </div>
+                    <nav class="navbar__menu">
+                            <ul class="menu__items">
+                                <li class="menu__item__active">
+                                    <div class="item__active _active">
+                                        
+                                    </div>
+                                    <div class="item__info">
+                                        <img src="img/navbar/timetable.svg" alt="">
+                                        <a href="/" class="info__link">Расписание</a>
+                                    </div>
+                                    <div class="info__img">
+                                        <img class="img__arrow" src="img/navbar/arrow1.svg" alt="">
+                                    </div>
+                                </li>
+                                <li class="menu__item">
+                                    <div class="item__info">
+                                        <img src="img/navbar/calendar.svg" alt="">
+                                        <a href="index.html" class="info__link">Календарь</a>
+                                    </div>
+                                    <div class="info__img">
+                                        <img class="img__arrow" src="img/navbar/arrow1.svg" alt="">
+                                    </div>
+                                </li>
+                        </ul>
+                    </nav>
+            </div>
+        </navbar>
+        <main class="page">
+            <div class="page__container">
+                <header class="header">
+                    <div class="header__container">
+                        <div class="header__search">Расписание</div>
+                        <form class="search__items">
+                            <img class="search__lupa" src="img/lupa.svg" alt="Logo">
+                            <input class="search__input" type="text" placeholder="Поиск">
+                            <button type="search__button" class="search__button"><img  class="search__img" src="img/arrowDown.svg" alt="Logo"></button>
+                        </form>
+                    </div>
+                </header>
+                <section class="calendar__mini">
+                    <div id="root_2"></div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="js/header.js"></script>
+</body>
+</html>

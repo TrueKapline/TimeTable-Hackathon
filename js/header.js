@@ -1,12 +1,12 @@
 "use strict";
 
-const headerBurger = document.querySelector('.header__burger');
+const navbarBurger = document.querySelector('.navbar__burger');
 
-if(headerBurger) {
-    const headerMenu = document.querySelector('.menu__items');
-        headerBurger.addEventListener("click", function(e) {
+if(navbarBurger) {
+    const navbarMenu = document.querySelector('.menu__items');
+    navbarBurger.addEventListener("click", function(e) {
         document.body.classList.toggle('_lock');
-        headerBurger.classList.toggle('active');
-        headerMenu.classList.toggle('active');
+        navbarBurger.classList.toggle('active');
+        navbarMenu.classList.toggle('active');
     });
 }
