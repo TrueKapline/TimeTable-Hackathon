@@ -2,7 +2,7 @@ import React from 'react'
 
 import classnames from 'classnames';
 
-import * as calendar from './calendar'
+import * as calendar from './Calendar'
 
 import './css/style.css';
 import './css/index.css';
